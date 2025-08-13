@@ -1,0 +1,63 @@
+:root {
+  --gap: 16px;
+  --border: 1px solid #e5e7eb;
+  --radius: 10px;
+}
+.content {
+        display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.app {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: system-ui, sans-serif;
+}
+
+.plant-grid {
+    width: 65%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--gap);
+  margin-block: 16px 32px;
+}
+
+.plant-card {
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+}
+.plant-emoji { font-size: 2rem; }
+.plant-name { margin: 8px 0 12px; font-size: 1rem; }
+
+.cart {
+  border-top: var(--border);
+  padding-top: 16px;
+  width: 30%;
+}
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 8px;
+}
+.cart-item {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border: var(--border);
+  border-radius: var(--radius);
+  background: #fafafa;
+}
+.cart-emoji { font-size: 1.5rem; text-align: center; }
+.cart-qty { display: inline-flex; gap: 6px; align-items: center; }
+.cart-item button { cursor: pointer; }
+.remove { margin-left: 8px; }
+
